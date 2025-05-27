@@ -3,38 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>אמה זרקא - ניחוחות של בית</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      height: 100%;
-      width: 100%;
+0%;
     }
-
     iframe {
       position: fixed;
       left: 0;
+      top: 0;
       width: 100vw;
       height: 100vh;
       border: none;
-    }
-
-    /* Desktop: hide Wix ad */
-    @media (min-width: 768px) {
-      iframe {
-        top: -51px;
-        height: calc(100vh + 51px);
-      }
-    }
-
-    /* Mobile: show the page normally (with Wix ad) */
-    @media (max-width: 767px) {
-      iframe {
-        top: 0;
-        height: 100vh;
-      }
+      transform: translateY(-51px);
+      height: calc(100vh + 51px); /* Account for the shift */
     }
   </style>
 </head>
