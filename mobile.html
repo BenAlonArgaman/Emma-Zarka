@@ -8,6 +8,7 @@
     html, body {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
       overflow: hidden;
       height: 100%;
       width: 100%;
@@ -15,10 +16,12 @@
     iframe {
       position: fixed;
       left: 0;
-      top: -51px; /* still hiding the Wix ad */
-      width: 100%;
-      height: 108%;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
       border: none;
+      transform: translateY(-51px);
+      height: calc(100vh + 51px); /* Account for the shift */
     }
   </style>
 </head>
